@@ -95,7 +95,7 @@ object Build : BuildType({
         dockerCommand {
             name = "push"
             commandType = push {
-                namesAndTags = "100.100.100.101:1186/app:v1"
+                namesAndTags = "100.100.100.101:1186/%APP_NAME%:%APP_VER%"
             }
         }
     }
