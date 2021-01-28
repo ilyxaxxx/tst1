@@ -42,6 +42,7 @@ project {
     params {
         param("APP_NAME", "app1")
         param("APP_VER", "v1")
+        param("DOCKER_REGISTRY", "100.100.100.101:1186")
         param("NEXUS_ADDR", "100.100.100.101:8081")
         param("NEXUS_URL", "http://%NEXUS_ADDR%")
     }
