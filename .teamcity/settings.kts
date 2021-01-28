@@ -35,7 +35,6 @@ version = "2020.2"
 project {
 
     vcsRoot(V1)
-    vcsRoot(V2)
 
     buildType(Build)
 
@@ -140,10 +139,4 @@ object V1 : GitVcsRoot({
     name = "v1"
     url = "https://github.com/spring-guides/gs-maven/"
     branch = "refs/heads/master"
-})
-
-object V2 : GitVcsRoot({
-    name = "v2"
-    url = "https://github.com/ilyxaxxx/tst1"
-    branch = "refs/heads/main"
 })
