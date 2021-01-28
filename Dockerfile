@@ -1,3 +1,3 @@
 FROM openjdk
-ADD app.jar . 
+ADD apps/app.jar . 
 ENTRYPOINT ["java","-jar","/app.jar"]
