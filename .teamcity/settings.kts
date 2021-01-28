@@ -105,6 +105,9 @@ object Build : BuildType({
 
     triggers {
         vcs {
+            triggerRules = "+:root=${V1.id}:**"
+
+            branchFilter = ""
         }
     }
 
