@@ -40,7 +40,7 @@ project {
     params {
         param("env.APP_NAME", "app1")
         param("env.APP_VER", "1")
-        param("NEXUS_URL", "http://100.100.100.101:1186")
+        param("env.NEXUS_URL", "http://100.100.100.101:1186")
     }
 
     features {
