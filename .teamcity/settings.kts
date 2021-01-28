@@ -136,7 +136,7 @@ object Build : BuildType({
 })
 
 object V1 : GitVcsRoot({
-    name = "v1"
+    name = "git1-code"
     url = "https://github.com/spring-guides/gs-maven/"
     branch = "refs/heads/master"
 })
