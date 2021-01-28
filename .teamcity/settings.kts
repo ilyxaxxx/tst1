@@ -73,7 +73,7 @@ object Build : BuildType({
         maven {
             goals = "deploy"
             pomLocation = "initial/pom.xml"
-            runnerArgs = "-Dmaven.test.failure.ignore=true -DaltDeploymentRepository=nexus-public::default::http://100.100.100.101:8081/repository/maven-releases/"
+            runnerArgs = "-Dmaven.test.failure.ignore=true -DaltDeploymentRepository=nexus-public::default::env.NEXUS_URL/repository/maven-releases/"
             workingDir = "complete"
         }
         dockerCommand {
