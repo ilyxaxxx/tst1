@@ -69,7 +69,6 @@ object Build : BuildType({
 
     vcs {
         root(V1)
-        root(V2)
     }
 
     steps {
