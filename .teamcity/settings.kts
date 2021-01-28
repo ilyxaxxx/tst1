@@ -39,6 +39,7 @@ project {
 
     params {
         param("env.APP_NAME", "app1")
+        param("env.APP_VER", "1")
     }
 
     features {
