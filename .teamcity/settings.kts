@@ -41,8 +41,8 @@ project {
 
     params {
         param("APP_NAME", "app1")
+        param("APP_VER", "v1")
         param("NEXUS_URL", "http://100.100.100.101:1186")
-        param("system.APP_VER", "1")
     }
 
     features {
