@@ -37,6 +37,10 @@ project {
 
     buildType(Build)
 
+    params {
+        param("env.APP_NAME", "app1")
+    }
+
     features {
         dockerRegistry {
             id = "PROJECT_EXT_3"
