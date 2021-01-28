@@ -75,6 +75,7 @@ object Build : BuildType({
             pomLocation = "initial/pom.xml"
             runnerArgs = "-Dmaven.test.failure.ignore=true -DaltDeploymentRepository=nexus-public::default::${'$'}{NEXUS_URL}/repository/maven-releases/"
             workingDir = "complete"
+            isIncremental = true
         }
         dockerCommand {
             name = "docker"
