@@ -83,12 +83,12 @@ object Build : BuildType({
             commandType = build {
                 source = content {
                     content = """
-                        FROM 100.100.100.101:1186/openjdk
+                        FROM %DOCKER_REGISTRY%/openjdk
                         ADD %NEXUS_URL%/repository/maven-releases/org/springframework/gs-maven/0.1.0/gs-maven-0.1.0.jar app.jar 
                         ENTRYPOINT ["java","-jar","app.jar"]
                     """.trimIndent()
                 }
-                namesAndTags = "100.100.100.101:1186/%APP_NAME%:%APP_VER%"
+                namesAndTags = "%DOCKER_REGISTRY%/%APP_NAME%:%APP_VER%"
                 commandArgs = "--pull"
             }
             param("dockerImage.platform", "linux")
