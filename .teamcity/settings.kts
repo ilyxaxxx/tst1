@@ -40,7 +40,7 @@ project {
     features {
         dockerRegistry {
             id = "PROJECT_EXT_3"
-            name = "Docker Registry"
+            name = "Private Docker Registry"
             url = "http://100.100.100.101:1186"
             userName = "docker"
             password = "credentialsJSON:902a9ebf-a94d-48e2-af79-33ba35f8b046"
